@@ -24,8 +24,6 @@ namespace Prueba.Shapes
 
         public override bool IsInShape(double xCoordinate, double yCoordinate)
         {
-            //double distance = Math.Sqrt((xPosition - xCoordinate) * (xPosition - xCoordinate) + (yPosition - yCoordinate) * (yPosition - yCoordinate));
-            //return distance == 0;
             bool inShape = false;
             if ((xPosition == xCoordinate) && (yPosition == yCoordinate))
                 inShape = true;
