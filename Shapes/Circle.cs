@@ -6,13 +6,11 @@ namespace Prueba.Shapes
     /// </summary>
     public class Circle : Shape
     {
-        public Circle(int id, double xPos, double yPos, double radius)
+        public Circle(int id, double xPos, double yPos, double radius) : base(id, xPos, yPos)
         {
-            Id = id;
             Radius = radius;
-            xPosition = xPos;
-            yPosition = yPos;
         }
+
         public override double Area => Math.Round(Math.PI * Math.Pow(Radius, 2), 2);
 
         public double Diameter => Radius * 2;

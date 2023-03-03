@@ -15,13 +15,10 @@ namespace Prueba.Shapes
         public double Height { get; }
         public double Width { get; }
         public override double Area => Height * Width;
-        public Rectangle(int id, double xPos, double yPos, double length, double width)
+        public Rectangle(int id, double xPos, double yPos, double length, double width) : base(id, xPos, yPos)
         {
-            Id = id;
             Height = length;
             Width = width;
-            xPosition = xPos;
-            yPosition = yPos;
         }
 
 

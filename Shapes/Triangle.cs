@@ -16,14 +16,11 @@ namespace Prueba.Shapes
         public double FirstSide;
         public double SecondSide;
         public double ThirdSide;
-        public Triangle(int id, double xPos, double yPos, double firstSide, double secondSide, double thirdSide)
+        public Triangle(int id, double xPos, double yPos, double firstSide, double secondSide, double thirdSide) : base(id, xPos, yPos)
         {
-            Id = id;
             FirstSide = firstSide;
             SecondSide = secondSide;
             ThirdSide = thirdSide;
-            xPosition = xPos;
-            yPosition = yPos;
         }
 
         public override bool IsInShape(double xCoordinate, double yCoordinate)

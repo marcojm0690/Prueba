@@ -15,12 +15,9 @@ namespace Prueba.Shapes
         public double Side { get; }
 
         public override double Area => Math.Pow(Side, 2);
-        public Square(int id, double xPos, double yPos, double length)
+        public Square(int id, double xPos, double yPos, double length) : base(id, xPos, yPos)
         {
-            Id = id;
             Side = length;
-            xPosition = xPos;
-            yPosition = yPos;
         }
 
         public override bool IsInShape(double xCoordinate, double yCoordinate)

@@ -10,6 +10,12 @@ namespace Prueba.Shapes
     public abstract class Shape
     {
 
+        public Shape(int id, double xPos, double yPos)
+        {
+            Id = id;
+            xPosition = xPos;
+            yPosition = yPos;
+        }
         public int Id { get; set; }
         public double xPosition { get; set; }
         public double yPosition { get; set; }
